@@ -1,0 +1,122 @@
+
+/*Generañ*/
+*{
+    margin:0px;
+    padding: 0px;;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+}
+
+
+
+
+h1{
+    font-size: 4rem ;
+    font-weight: 700;
+    
+}
+h2{
+    font-size: 1.625rem;
+}
+h3{
+    font-size: 1.2rem;
+}
+ /* Fondo*/
+html, body, .cover {
+    height: 100%;
+}
+
+.cover{
+    background: url(../img/cover.jpg);
+  
+}
+
+/* Fondo*/
+
+
+section.cabecera{
+    background: none;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.8) 100%);
+}
+/* Cabecera*/
+
+
+nav{
+    margin: 0 3.5rem;
+    padding-top: 26px;
+}
+div.logo{
+    float:left;
+}
+div.login{
+    float: right;
+    color: white;
+   
+}
+div.login span{
+    padding: 7px 17px;
+    background: rgb(229, 9, 20);
+    border-radius: 4px;
+}
+.presentacion{
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*div.presentacion span{ no tiene funcionalidad de botón
+    padding: 7px 20px;
+    background: rgb(229, 9, 20);
+    border-radius: 0px 4px 4px 0px;
+    font-weight: 500px;
+    margin-left: -4px;
+    height: 35px;
+    display: inline-block;
+    border: solid 1px #44494e;
+    border-left: none;
+    box-sizing: border-box;
+}*/
+
+div.presentacion button{
+    padding: 7px 20px;
+    background: rgb(229, 9, 20);
+    border-radius: 0px 4px 4px 0px;
+    font-weight: 500px;
+    margin-left: -4px;
+    height: 35px;
+    display: inline-block;
+    border: solid 1px #44494e;
+    border-left: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.presentacion input{
+    height: 35px;
+    width: 300px;
+    /*margin-top: 20px;
+    margin-bottom: 20px;*/
+    color: rgb(32, 31, 31);
+    border-radius: 4px 0px 0px 4px;
+    border: solid 1px #44494e;
+    padding-left: 7px ;
+    border-right: none;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+.input_search{ /*encapsulamiento*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
