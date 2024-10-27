@@ -1,11 +1,11 @@
 
-/*Generañ*/
+/*General*/
 *{
     margin:0px;
     padding: 0px;;
     color: white;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 
@@ -20,7 +20,7 @@ h2{
     font-size: 1.625rem;
 }
 h3{
-    font-size: 1.2rem;
+    font-size: 1.15rem;
 }
  /* Fondo*/
 html, body, .cover {
@@ -30,6 +30,31 @@ html, body, .cover {
 .cover{
     background: url(../img/cover.jpg);
   
+}
+
+section{
+    background: black;
+    border-bottom:8px solid rgb(88, 86, 86);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section div.contenido{
+
+    width: 1100px;
+   
+    margin: auto ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section div.contenido div{
+   
+}
+
+.restaurar{
+    clear: both;
 }
 
 /* Fondo*/
@@ -42,7 +67,7 @@ section.cabecera{
     left: 0px;
     bottom: 0px;
     right: 0px;
-    background-image: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.8) 100%);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
 }
 /* Cabecera*/
 
@@ -57,12 +82,14 @@ div.logo{
 div.login{
     float: right;
     color: white;
+
    
 }
-div.login span{
+div.login button{
     padding: 7px 17px;
     background: rgb(229, 9, 20);
-    border-radius: 4px;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
 }
 .presentacion{
     text-align: center;
@@ -85,7 +112,7 @@ div.login span{
     box-sizing: border-box;
 }*/
 
-div.presentacion button{
+div.presentacion button, div.contPreguntas button{
     padding: 7px 20px;
     background: rgb(229, 9, 20);
     border-radius: 0px 4px 4px 0px;
@@ -101,7 +128,7 @@ div.presentacion button{
 
 .presentacion input{
     height: 35px;
-    width: 300px;
+    width: 650px;
     /*margin-top: 20px;
     margin-bottom: 20px;*/
     color: rgb(32, 31, 31);
@@ -120,3 +147,189 @@ div.presentacion button{
    
 }
 
+/*TV*/
+.izquierda{
+    float:left;
+}
+
+.derecha{
+    float: right;
+}
+/**/
+.flotanteTexto{
+    width: 59%;
+}
+.flotanteImagen{
+    width: 39%;
+}
+.tv img{
+    width: 100%;
+    height: audto;
+    border: 0;
+    position: relative;
+    z-index: 2;
+
+}
+.contenido h2{
+    font-weight: bold;
+    font-size: 50px;
+}
+.contenido p{
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.contenido img{
+    width: 100%;
+    height: auto;
+    border: 0;
+    position: relative;
+    z-index: 2;
+}
+.tv video{
+    position:absolute;
+    transform:translate(-373px,68px) ;/*traslada el video y lo ubica dentro de la imagen*/
+    width: 310px;
+    z-index: 1;
+}
+
+
+
+/*TARJETA*/
+
+.tarjeta{
+    position: relative;
+    transform: translate(-40px, -50px);
+}
+.tarjetaInterna, .portada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tarjetaInterna{
+    width: 70%;
+    margin: auto;
+    border: solid 2px #434343;
+    padding: 10px;
+    border-radius: 6px;
+    position: relative;
+    z-index: 2;
+    background: #000000;
+}
+
+
+
+
+.izquierda{
+    float: left;
+}
+
+.derecha{
+    float: right;
+}
+
+.textoPortada {
+    text-align: left;
+    
+}
+
+
+/*DISFRUTA*/
+
+.disfruta video{
+    position: absolute;
+    transform:translate(-355px,32px);/*traslada el video y lo ubica dentro de la imagen*/
+    width: 280px;
+    z-index: 1;
+}
+/*Preguntas*/
+.preguntas h2{
+    font-weight: bold;
+    font-size: 30px;
+}
+.contPreguntas{
+    width: 815px;
+    margin: auto;
+    text-align: center;
+}
+
+.contPreguntas div{
+text-align: left;
+font-size: 20px;
+}
+.pregunta{
+    background: #303030;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    position: relative;
+
+}
+.pregunta p, .respuesta p{
+    padding: 10px;
+    padding-left: 20px;
+   
+}
+
+.respuesta{
+    background: #303030;
+    /* padding: 7px; */
+    margin-bottom: 5px ;
+    margin-top: 5px;
+}
+
+.respuesta{
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+    /* transition: max-height 0.3s ease; */
+}
+.respuesta hr{
+    border: 1px solid #262626;
+}
+
+.pregunta:hover .respuesta {
+    max-height: 500px; /* Va a llegar hasta donde está el contenido */
+}
+
+.contPreguntas input{
+    margin-top: 20px;
+    height: 35px;
+    width: 680px;
+    /*margin-top: 20px;
+    margin-bottom: 20px;*/
+    color: rgb(32, 31, 31);
+    border-radius: 4px 0px 0px 4px;
+    border: solid 1px #44494e;
+    padding-left: 7px ;
+    border-right: none;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+.input_pregunta{ /*encapsulamiento*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+ .contPreguntas button{
+    margin-top: 20px;
+} 
+
+.pie{
+    columns: 4 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pie p{
+    font-size: small;
+    color: #b4c0cd;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
